@@ -1,0 +1,553 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#container{
+   
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* .heading */
+
+.nav{ z-index: 100;}
+.navbar-brand{color: white}
+.heading {position: absolute; top: 40vh;color: white; padding: 20px; left: 15%; }
+.heading > a { margin: 10px auto;}
+.heading h1{font-size: 80px;}
+li a{ color : white}
+
+
+
+
+
+.navbar-default{
+    transition:500ms ease;
+   
+  }
+
+.gradient-button {
+   
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    
+}
+.gradient-button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+    text-decoration: none;
+    color: white;
+}
+.gradient-button-1 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
+.gradient-button-1:hover { background-position: right center; }
+
+
+/* about-us */
+
+.about-us
+{
+    height: fit-content;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.about-us h1{ font-size: 50px;   
+}
+
+.about-container{
+    height: fit-content;
+    width: 80%;
+    margin: 10px auto;
+    
+    
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 5px;
+  
+    
+    
+}
+.about-container > h1 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.about-container p {
+    color: grey;
+}
+
+.images-about{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.info{
+    display: flex;
+    font-size: large;
+    flex-direction: row;
+    width: fit-content;
+    padding: 0;
+    
+}
+
+.info .question ul{
+    list-style-type: none;
+    padding: 0;
+}
+.info .question li{
+
+   
+    text-decoration: none;
+    padding: 10px auto;
+    padding: 10px;
+    color: grey;
+}
+
+
+.info .answer ul{
+    list-style-type: none;
+}
+
+.info .answer ul li{
+    color: grey;
+    padding: 10px;
+}
+
+#triangle-down {
+    width: 100%;
+    min-height: 700px;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 100px solid rgb(252, 123, 123);
+    background-color:rgb(252, 123, 123);
+    padding: 0;
+    
+    
+  }
+
+  #triangle-up {
+    width: 100%;
+    height: 0;
+    border-right: 198px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 100px solid #F7BB97;
+    
+  }
+
+  #triangle-up-right {
+    width: 100%;
+    height: 0;
+    border-left: 198px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100px solid rgb(252, 123, 123);
+    
+  }
+
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #F7BB97;
+    border-right: 100px solid transparent;
+  }
+
+
+
+
+
+  /* education */
+  .education
+  {
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      margin: 0px auto;
+      width: 80%;
+      color: white;
+      height: fit-content;
+
+      
+    
+  }
+
+  .education h1{
+      text-align: center;
+      margin: 20px auto;
+  }
+
+
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .contain {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    color: black;
+   
+  }
+  
+  /* The circles on the timeline */
+  .contain::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+   
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+
+
+    .about-container{
+        width: 100%;
+    }
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    overflow: hidden;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .contain::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+
+
+  /* skills */
+
+
+  .skills-container
+  {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .skills
+  {
+      height: fit-content;
+      width: 90%;
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      
+     
+
+
+  }
+
+  .skills h1{
+    text-align: center;
+    
+  }
+
+
+  .skills-bar-container{
+    display: flex;
+    margin: 40px 0px;
+    
+
+  }
+
+  .skills-bars, .skills-bar2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+  }
+
+
+
+/* projects */
+
+
+
+
+
+
+
+.project-dw{
+    background-color: #bebebe;  /* fallback for old browsers */
+    text-align: center;
+    width: 100%;
+    min-height: 500px;
+   
+    padding: 40px;
+    margin: 0px auto;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.project-dw h1{
+    margin: 40px 0;
+}
+
+
+.projects{
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  
+  width: 80%;
+  margin: 100px auto;
+
+  flex-wrap: wrap;
+  
+}
+
+.project{
+  width: 300px;
+  height: 200px;
+  
+
+  margin: 10px auto;
+
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+   
+    width: 300px;
+    height: 200px;
+    position: absolute;
+
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+   
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .card .back {
+        background: #222;
+        color: #FFF;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+
+
+  
+
+
+/* education */
+
+
+
+/* footer -  contact form  */
+
+
+.footer{
+  border: 1px solid black;
+  width: 100%;
+  background-color: #222;
+
+  min-height: 600px;
+}
+
+
+.footer h1{
+  color: white;
+  margin: 20px 0px;
+}
+
+
+.footer .contact{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+
+}
+
+
+.icons-container
+{
+  display: flex;
+  margin: 20px 0px;
+
+  
+}
