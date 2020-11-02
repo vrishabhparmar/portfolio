@@ -100,6 +100,7 @@ li a{ color : white}
 
 .about-container p {
     color: grey;
+    line-height: 30pt;
 }
 
 .images-about{
@@ -121,14 +122,17 @@ li a{ color : white}
 .info .question ul{
     list-style-type: none;
     padding: 0;
+
 }
 .info .question li{
 
    
     text-decoration: none;
     padding: 10px auto;
-    padding: 10px;
+    padding: 0px;
     color: grey;
+    font-size: 14px;
+    line-height: 30pt;
 }
 
 
@@ -191,7 +195,7 @@ li a{ color : white}
       margin: 0px auto;
       width: 80%;
       color: white;
-      height: fit-content;
+      min-height: 700px;
 
       
     
