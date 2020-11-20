@@ -149,7 +149,7 @@ li a{ color : white}
     min-height: 700px;
     border-left: 0px solid transparent;
     border-right: 0px solid transparent;
-    border-top: 100px solid rgb(252, 123, 123);
+   
     background-color:rgb(252, 123, 123);
     padding: 0;
     
@@ -411,10 +411,15 @@ li a{ color : white}
   transition: all 0.25s ease-out;
   color: #f1f1f1;
   opacity: 0;
+  background-color: rgb(155, 155, 155);
+  text-align: left;
 }
+
 .accordion h4, .accordion p {
   margin: 0;
   line-height: 1;
+
+  padding: 10px;
 }
 .accordion h4 {
   color: #fff;
